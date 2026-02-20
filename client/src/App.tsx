@@ -129,7 +129,7 @@ function App() {
     <Container maxWidth="lg" sx={{ py: 4 }}>
       <Box sx={{ mb: 4, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         <Typography variant="h3" component="h1">
-          todoList
+          Wellcome to my to do list
         </Typography>
         <Button variant="contained" startIcon={<AddIcon />} onClick={handleCreateTask}>
           New Task

@@ -1,4 +1,4 @@
-# todoList
+# Wellcome to my to do list
 
 A personal task management application with an intuitive design, supporting filtration, sorting, and multiple views.
 
