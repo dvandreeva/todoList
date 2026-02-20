@@ -18,11 +18,6 @@ A personal task management application with an intuitive design, supporting filt
 
 ### 1. Clone the repository
 
-```bash
-git clone <repo-url>
-cd todoList
-```
-
 ### 2. Install dependencies
 
 ```bash
@@ -41,12 +36,6 @@ To stop MongoDB:
 
 ```bash
 docker-compose down
-```
-
-To remove MongoDB container and volumes (⚠️ this will delete all data):
-
-```bash
-docker-compose down -v
 ```
 
 ### 4. Configure environment variables
@@ -82,31 +71,3 @@ This runs both servers concurrently:
 | `npm run client` | Start frontend only             |
 | `npm run lint`   | Lint all files with ESLint      |
 | `npm run format` | Format all files with Prettier  |
-
-## Project Structure
-
-```
-todoList/
-├── client/                  # React frontend (Vite + TypeScript)
-│   ├── src/
-│   │   ├── store/           # Redux store & slices
-│   │   ├── theme.ts         # MUI theme configuration
-│   │   ├── App.tsx          # Root component
-│   │   └── main.tsx         # Entry point (Provider + Theme)
-│   ├── vite.config.ts       # Vite config (with API proxy)
-│   └── package.json
-├── server/                  # Express backend (TypeScript)
-│   ├── src/
-│   │   ├── config/          # Database connection
-│   │   ├── controllers/     # Route handlers
-│   │   ├── models/          # Mongoose models
-│   │   ├── routes/          # Express routes
-│   │   ├── types/           # Shared TypeScript types
-│   │   └── index.ts         # Server entry point
-│   ├── tsconfig.json
-│   ├── nodemon.json
-│   └── package.json
-├── eslint.config.mjs        # Shared ESLint config (flat)
-├── .prettierrc              # Shared Prettier config
-└── package.json             # Root scripts & dev dependencies
-```
